@@ -1,5 +1,5 @@
 output "fqdn" {
-  value = "${azurerm_app_service_custom_hostname_binding.default.*.dns_name}"
+  value = "${azurerm_app_service_custom_hostname_binding.default.*.hostname}"
 }
 
 output "app_service_names" {
