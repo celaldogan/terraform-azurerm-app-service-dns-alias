@@ -21,7 +21,3 @@ variable "app_service_resource_group_name" {}
 variable "ttl" {
   default = 300
 }
-
-locals {
-  dns_zone = "${var.dns_zone_provider == "" ? "default" : var.dns_zone_provider}"
-}
