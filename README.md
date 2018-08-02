@@ -1,4 +1,4 @@
-# tf-module-azurerm-app-service-dns-alias
+# terraform-azurerm-app-service-dns-alias
 
 Terraform module designed to creates DNS alias (CNAME) for an existing Azure App Service, web or function.
 
