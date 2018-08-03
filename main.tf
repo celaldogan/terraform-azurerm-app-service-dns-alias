@@ -13,4 +13,6 @@ resource "azurerm_app_service_custom_hostname_binding" "default" {
   hostname            = "${format("%s.%s", element(azurerm_dns_cname_record.default.*.name, count.index), element(azurerm_dns_cname_record.default.*.zone_name, count.index)) }"
   app_service_name    = "${element(var.app_service_names, count.index)}"
   resource_group_name = "${var.app_service_resource_group_name}"
+
+  depends_on = "${var.depends_on}"
 }

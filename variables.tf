@@ -21,3 +21,4 @@ variable "app_service_resource_group_name" {}
 variable "ttl" {
   default = 300
 }
+variable depends_on { default = [], type = "list"}
