@@ -1,4 +1,4 @@
-variable "count" {
+variable "count_of_app_services" {
   default     = 1
   description = "Count must be of equal length to dns_name and alias lists"
 }
@@ -21,4 +21,3 @@ variable "app_service_resource_group_name" {}
 variable "ttl" {
   default = 300
 }
-variable depends_on { default = [], type = "list"}
