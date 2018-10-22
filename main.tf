@@ -17,7 +17,7 @@ data "azurerm_app_service" "default" {
 }
 
 data "azurerm_dns_zone" "default" {
-  name     = "${var.zone_name}"
+  name     = "${var.dns_zone_name}"
   provider = "azurerm.dns"
 }
 

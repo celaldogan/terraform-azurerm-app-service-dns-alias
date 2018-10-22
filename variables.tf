@@ -7,7 +7,7 @@ variable "app_service_names" {
   type = "list"
 }
 
-variable "dns_zone" {
+variable "dns_zone_name" {
   type = "string"
 }
 
