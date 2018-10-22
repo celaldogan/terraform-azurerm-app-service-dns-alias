@@ -11,7 +11,6 @@ variable "dns_zone" {
   type = "string"
 }
 
-variable "dns_zone_resource_group_name" {}
 variable "app_service_resource_group_name" {}
 
 variable "ttl" {

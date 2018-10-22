@@ -12,7 +12,7 @@ provider "azurerm" {
 # ---------------------------------------------------------------------------------------------------------------------
 data "azurerm_app_service" "default" {
   count               = "${var.count_of_app_service_names}"
-  name                = "${element(var.app_service_names, count.index)}"
+  name                = "${var.app_service_names[count.index]}"
   resource_group_name = "${var.app_service_resource_group_name}"
 }
 
