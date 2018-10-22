@@ -1,21 +1,16 @@
-variable "count_of_app_services" {
+variable "count_of_app_service_names" {
   default     = 1
-  description = "Count must be of equal length to dns_name and alias lists"
+  description = "Count must be of equal length to app_service_names lists"
 }
 
 variable "app_service_names" {
   type = "list"
 }
 
-variable "fqdn_aliases" {
-  type = "list"
-}
-
-variable "dns_zone" {
+variable "dns_zone_name" {
   type = "string"
 }
 
-variable "dns_zone_resource_group_name" {}
 variable "app_service_resource_group_name" {}
 
 variable "ttl" {
